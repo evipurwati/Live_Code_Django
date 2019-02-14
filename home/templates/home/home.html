@@ -1,0 +1,93 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+    <head>
+        {% block title %}
+        <title>Home</title>
+        {% endblock %}
+    </head>
+
+    {% block content %}
+        <div class="isi">
+            <div class="daftar-barang row">
+
+
+                <!-- {% for barang in barangs %}
+                <div class="col-lg-4 col-md-6 col-sm-12" >
+                    <div class="square">
+                        <div class="foto-barang">
+                            <img src="{{ data.foto.url }}" alt="" class="foto">
+                        </div>
+                        <div class="ket-barang">
+                            <p style="font-weight: bold">{{ barang.nama }}</p>
+                            <p>{{ barang.harga }}</p>
+                            <a href="{% url 'blog-detail' blog_id=data.id %}" style="color: #00cad1">Lihat Details</a> -->
+                        <!-- </div>
+                    </div>
+                </div>
+                {% endfor %} --> -->
+            
+
+                <div class="col-lg-4 col-md-6 col-sm-12" > 
+                    <div class="square">
+                        <div class="foto-barang">
+                            <img src="{% static 'images/sepatu.jpg' %}" alt="" class="foto">
+                        </div>
+                        <div class="ket-barang">
+                            <p style="font-weight: bold">Sepatu Vans</p>
+                            <p>Rp. 799.000</p>
+                            <p>Lihat Details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12" >
+                    <div class="square">
+                        <div class="foto-barang">
+                            <img src="{% static 'images/motor.jpg' %}" alt="" class="foto">
+                        </div>
+                        <div class="ket-barang">
+                            <p style="font-weight: bold">Motor</p>
+                            <p>Rp. 35.000.000</p>
+                            <p>Lihat Details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12" >
+                    <div class="square">
+                        <div class="foto-barang">
+                            <img src="{% static 'images/kompor.jpg' %}" alt="" class="foto">
+                        </div>
+                        <div class="ket-barang">
+                            <p style="font-weight: bold">Kompor</p>
+                            <p>Rp. 1.000.000</p>
+                            <p>Lihat Details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12" >
+                    <div class="square">
+                        <div class="foto-barang">
+                            <img src="{% static 'images/monitor.jpg' %}" alt="" class="foto">
+                        </div>
+                        <div class="ket-barang">
+                            <p style="font-weight: bold">Monitor</p>
+                            <p>Rp. 3.000.000</p>
+                            <p>Lihat Details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 clol-sm-12" >
+                    <div class="square">
+                        <div class="foto-barang">
+                            <img src="{% static 'images/mobil.jpg' %}" alt="" class="foto">
+                        </div>
+                        <div class="ket-barang">
+                            <p style="font-weight: bold">Mobil</p>
+                            <p>Rp. 200.000.000</p>
+                            <p>Lihat Details</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    {% endblock %}

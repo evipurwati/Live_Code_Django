@@ -1,0 +1,27 @@
+{% load static %}
+
+    <head>
+        {% block title %}
+ 
+        {% endblock %}
+    </head>
+
+    <body>
+        <header class="box"> 
+            <div class="container-fluid">
+                <div class="row" style="background-color: #00cad1">
+                    <div class="col-1">
+                        <span class="text" style="color: white">Toko Online</span>
+                    </div>
+                    <div class="col-1">
+                        <span><a href="{% url 'home' %}" class="text" style="color: white">Home</a></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        {% block content %}
+
+        {% endblock %}
+
+    </body>
